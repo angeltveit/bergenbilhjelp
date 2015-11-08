@@ -1,0 +1,11 @@
+doctype html
+html
+  head
+    title Bergen Bilhjelp AS
+    link(rel='stylesheet' href='/stylesheets/vendor.css')
+    link(rel='stylesheet' href='/stylesheets/app.css')
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css')
+    script(src="/javascripts/vendor.js")
+    script(src="/javascripts/app.js")
+  body(ng-app="bb")
+    .wrapper(ui-view layout="column")
