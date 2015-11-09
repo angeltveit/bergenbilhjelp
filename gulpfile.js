@@ -9,6 +9,7 @@ var watch = require('gulp-watch')
 var connect = require('gulp-connect')
 var pkg = require('./package.json')
 var lib = require('bower-files')(pkg)
+var rupture = require('rupture')
 
 
 var paths = {
@@ -50,9 +51,12 @@ gulp.task('vendor.images', function() {
 });
 
 gulp.task('styl', function(done) {
+  options = {
+    use: [ rupture()]
+  }
   gulp.src('./src/stylesheets/app.styl')
     .pipe(plumber())
-    .pipe(styl())
+    .pipe(styl(options))
     .pipe(rename('app.css'))
     .pipe(gulp.dest('./public/stylesheets/'))
     .pipe(connect.reload())

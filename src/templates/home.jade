@@ -1,3 +1,80 @@
-header.home(layout="column")
+.menu(layout="row")
+  .navigation(layout="row")
+    .logo
+      img(src="/images/logo-mini.png")
+      #nav-icon3.hamburger
+        span
+        span
+        span
+        span
+
+    ul(layout="row")
+      li Historien
+      li Tjenester
+      li Media
+      li Kontakt
+  .right
+    i.fa.fa-phone
+    span &nbsp; 55 90 90 90
+header(layout="column")
   .logo
-  h1 Bergen Bilhjelp AS
+    img(src="images/logo.png")
+  .slogan På veien for deg
+
+.wrapper(layout="column")
+  article
+    h1.striped Historien
+      .stripes
+    img.fill-vertical(src="images/helping.jpg")
+    p Naf Veitjeneste Bergen (Bergen BilhjelpA/S) er et av ledende assistanseselskap i Bergen og tilbyr tjenester til forsikringselskap, privatmarkedet og bilforhandlere i Bergen omegn.
+    p Vi har avtale med de største bil forhandlere i Bergen.Vi tilbyr  internkjøringer og ulike tilleggstjenester som sikrer deres kunder rask og pålitelig hjelp ved uforutsette problemer.
+  
+  article
+    h1.striped Tjenester
+      .stripes
+    
+  article
+    h1.striped Media
+      .stripes
+    p Bergen Bilhjelp er stadig i nyhetene. Her er et utvalg av relevante saker.
+    .media-wrapper(layout="row")
+      .preview(layout="column")
+        .image
+          img(src="/images/articles/1.png")
+        h1 Ruset fører stakk fra krasj
+        .actions(layout="row")
+          .name <b>Bergen</b>Bilhjelp
+          .social
+            i.fa.fa-facebook 
+              small Del på facebook
+      .preview(layout="column")
+        .image
+          img(src="/images/articles/2.png")
+        h1 To personer har gått fra krasjet varebil på E16
+        .actions(layout="row")
+          .name <b>Bergen</b>Bilhjelp
+          .social
+            i.fa.fa-facebook 
+              small Del på facebook
+      .preview(layout="column")
+        .image
+          img(src="/images/articles/3.png")
+        h1 Føreren bommet på gass og brems
+        .actions(layout="row")
+          .name <b>Bergen</b>Bilhjelp
+          .social
+            i.fa.fa-facebook 
+              small Del på facebook
+      .preview(layout="column")
+        .image
+          img(src="/images/articles/4.png")
+        h1 Kollisjon på Askøy
+        .actions(layout="row")
+          .name <b>Bergen</b>Bilhjelp
+          .social
+            i.fa.fa-facebook 
+              small Del på facebook
+  article
+    h1.striped Kontakt
+      .stripes
+    
